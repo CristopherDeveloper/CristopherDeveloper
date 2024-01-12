@@ -1,0 +1,184 @@
+//  RESPONSIVE WEB DESING => RWD
+
+@media screen and (max-width: 98em) {
+    .main{
+        .blog{
+            .blog__contentofblogs{
+                .blog__template{
+                    .blog__templatedivtext{
+                        width: 29.2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 68em) {
+    .header{
+        .dropdownmenu{
+            &.dropdownmenu--flex{
+                left: 35vw;
+            }
+        }
+    }
+
+    .main{
+        .presentation__article{
+            .presentation__descriptionaboutthewebsite{
+                .presentation__content1{
+                    width: 80%;
+                    &.presentation__content1--flex{
+                        gap: 2em;
+                    }
+                }
+
+                .presentation__content2{
+                    width: 80%;
+                    &.presentation__content2{
+                        gap: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+    .login{
+        .login__article{
+            &.login__article--flex{
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 50em) {
+    .main{
+        .blog{
+            .blog__contentofblogs{
+                .blog__template{
+                    .blog__templatedivtext{
+                        width: 58%;
+                    }
+                }
+            }
+        }
+    }
+
+    .login{
+        .login__article{
+            padding: 1em 1em 1em 1em;
+            flex-direction: column;
+        }
+    }
+}
+
+
+@media screen and (max-width: 45em) {
+    .main{
+        .blog{
+            .blog__contentofblogs{
+                .blog__template{
+                    .blog__templatedivtext{
+                        width: 64%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 36em) {
+    .main{
+        .blog{
+            .blog__contentofblogs{
+                .blog__template{
+                    .blog__templatedivtext{
+                        width: 81%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:38em) {
+    .header{
+        .dropdownmenu{
+            &.dropdownmenu--flex{
+                left: 25vw;
+            }
+        }
+    }
+
+    .main{
+        .presentation__article{
+            .presentation__descriptionaboutthewebsite{
+                .presentation__content1{
+                    width: 67%;
+                    &.presentation__content1--flex{
+                        flex-direction: column;                    
+                    }
+                }
+
+                .presentation__content2{
+                    width: 67%;
+                    &.presentation__content2{
+                        flex-direction: column-reverse;   
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 36em) {
+    .main{
+        .blog{
+            .blog__contentofblogs{
+                .blog__template{
+                    .blog__templatedivtext{
+                        width: 81%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 32em){
+    .header{
+        .dropdownmenu{
+            &.dropdownmenu--flex{
+                left: 18vw;
+            }
+        }
+    }
+
+    .main{
+        .blog{
+            .blog__contentofblogs{
+                .blog__template{
+                    .blog__templatedivtext{
+                        width: 93%;
+                    }
+                }
+            }
+        }
+    }
+
+    .contentblog{
+        .contentblog__article{
+            .contentblog__template{
+                width: 89%;
+            }
+        }
+    }
+
+    .aside{
+        width: 73%;
+    }
+}
+

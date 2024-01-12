@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registrate para tener beneficios y configuracion disponible">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/login.js"></script>
+    <title>Registrarte</title>
+</head>
+<body>
+    <header class="header">
+        <article class="header__article">
+            <section class="header__section header__section--flex">
+                <button class="header__button" id="buttonOpenDropDowMenu">
+                    MENU
+                </button>
+            </section>
+        </article>
+
+        <article class="dropdownmenu dropdownmenu--flex" id="dropdownmenu">
+            <section class="dropdownmenu__sectiontitleandicon dropdownmenu__sectiontitleandicon--flex">
+                <p class="dropdownmenu__title">
+                    Blog
+                </p>
+
+                <i class="dropdownmenu__icon">
+                    <img class="dropdownmenu__settingicon" src="../img/icon/setting-mode-dark.svg" alt="Icono de engranaje de configuracion">
+                </i>
+            </section>
+
+            <section class="dropdownmenu__section">
+                <nav class="dropdownmenu__nav dropdownmenu__nav--flex">
+                    <a class="dropdownmenu__links" href="../blog/blog-about-html-tag.html">HTML semantico</a>
+                    <a class="dropdownmenu__links" href="#">Funciones</a>
+                    <a class="dropdownmenu__links" href="#">metoedos de un Arrays</a>
+                </nav>
+            </section>
+        </article>
+
+        <article class="dropdownhomeicon" id="buttonHouse">
+            <section class="dropdownhomeicon__section">
+                <a href="../index.html" class="dropdownhomeicon__icon">
+                    <img class="dropdownhomeicon__img" id="iconHouse" src="../img/icon/home-icons.svg" alt="">
+                </a>
+            </section>
+        </article>
+    </header>
+
+    <main class="login">
+        <article class="login__article login__article--flex">
+            <section class="login__form login__form--flex">
+                <section class="login__sectionh1 login__sectionh1--flex">
+                    <h1 class="login__h1">
+                        Crear Cuenta
+                    </h1>
+                </section>
+
+                <section class="login__sectionfor login__sectionfor--flex">
+                    <div class="login__labelandinput login__labelandinput--flex">
+                        <label for="gmailHtml">
+                            <i>
+                                <img src="../img/icon/mail-mode-dark.svg" alt="icono de un sobre de color negro que hace referencia al correo electronico en internet">
+                            </i>
+                        </label>
+
+                        <input type="email" name="" id="gmailHtml" placeholder="Ingrese su correo electronico">
+                    </div>
+
+                    <div class="login__labelandinput login__labelandinput--flex">
+                        <label for="passwordHtml">
+                            <i>
+                                <img src="../img/icon/lock-mode-dark.svg" alt="icono de una cerradura de color negro que hace referencia a las contraseñas en el internet">
+                            </i>
+                        </label>
+
+                        <input type="password" name="" id="passwordHtml" placeholder="Ingrese su contraseña">
+                    </div>
+
+                    <div class="login__showpassword login__showpassword--flex">
+                        <label for="showPassword">
+                            Mostrar Contraseña
+                        </label>
+
+                        <input type="checkbox" name="" id="showPassword">
+                    </div>
+                </section>
+
+                <section class="login__buttoncontent login__buttoncontent--flex">
+                    <button>
+                        Registrarte
+                    </button>
+                </section>
+            </section>
+
+            <section class="login__imgcoding login__imgcoding--flex">
+                <img class="login__coding" src="../img/image/coding.svg" alt="imagen decorativa sobre codificador">
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <article class="footer__article">
+            <section class="footer__section footer__section--flex">
+                <section class="footer__sectionh3 footer__sectionh3--flex">
+                    <h3 class="footer__h3">
+                        Mas informacion
+                    </h3>
+
+                    <section class="footer__sectiondiv footer__sectiondiv--flex">
+                        <div class="footer__informationproyect">
+                            <p class="footer__text1">
+                                Sitio web desarrollado para el Proyecto de EBAC.
+                            </p>
+                        </div>
+    
+                        <div class="footer__thecreator">
+                            <p class="footer__text2">
+                                Creado por Cristopher.
+                            </p>
+                        </div>
+                    </section>
+                </section>
+                
+                <section class="footer__sectionimg">
+                    <i class="footer__iconofgithub">
+                        <img class="footer__github" src="../img/icon/logo-github.svg" alt="Icono de un Logo de GitHub">
+                    </i>
+                </section>
+            </section>
+        </article>
+    </footer>
+</body>
+</html>

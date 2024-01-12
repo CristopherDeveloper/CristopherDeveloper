@@ -1,0 +1,42 @@
+.footer{
+    .footer__article{
+        background-color: #414141;
+        padding: 1em;
+        .footer__section{
+            &.footer__section--flex{
+                @include flex(column, none, none, none, none, 6em);
+            }
+            .footer__sectionh3{
+                &.footer__sectionh3--flex{
+                    @include flex(column, none, none, none, none, 2em);
+                }
+                .footer__h3{
+                    @include font('Montserrat', 2em, none);
+                    color: $colorPrincipal;
+                }
+
+                .footer__sectiondiv{
+                    &.footer__sectiondiv--flex{
+                        @include flex(column, none, none, none, none, 1em);
+                    }
+                    @include font('Montserrat', 1em, bold);
+                    color: $colorPrincipal;
+                }
+            }
+
+            .footer__sectionimg{
+                .footer__iconofgithub{
+                    .footer__github{
+                        width: 5em;
+                        transition: 0.5s;
+                        cursor: pointer;
+                        &:hover{
+                            transform: scale(1.1) rotate(360deg);
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

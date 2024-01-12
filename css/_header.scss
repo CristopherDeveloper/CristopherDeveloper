@@ -1,0 +1,162 @@
+.header{
+    .header__article{
+        padding: 2em;
+        .header__section{
+            &.header__section--flex{
+                @include flex(none, none, none, center, none, none);
+            }
+            margin: 0 auto;
+            width: 50%;
+            .header__button{
+                background-color: #00E2D6;
+                color: #ffff;
+                border: none;
+                border-radius: 0.5em;
+                padding: 0.5em 1em;
+                @include font('Montserrat' sans-serif, 2em, bold);
+                cursor: pointer;
+                transition: 1s;
+
+                &:hover{
+                    box-shadow: 0px 0px 30px #49fff5;
+                    transition: 0.2s;
+                }
+
+                &.opendrowmenuanimation{
+                    animation-name: animationclick;
+                    animation-duration: 0.5s;
+                }
+            }
+        }
+    }
+
+    .dropdownmenu{
+        &.dropdownmenu--flex{
+            @include flex(column, none, none, none, stretch, none);
+        }
+        position: fixed;
+        z-index: 9999;
+        left: 42vw;
+        top: -38em;
+        transition: 0.5s;
+        background-color: #303030;
+        border-radius: 1em;
+
+        &.alertmenu--animation{
+            animation-name: alertmenu;
+            animation-duration: 0.5s;
+        }
+
+        &.opendropwmenu{
+            top: 7em;
+            transition: 0.5s;
+        }
+        .dropdownmenu__sectiontitleandicon{
+            &.dropdownmenu__sectiontitleandicon--flex{
+                @include flex(row, none, none, none, center, 6em);
+            }
+            padding: 1em 1em 0.5em 1em;
+            background-color: #FFFFFF;
+            border-radius: 1em 1em 0em 0em;
+            .dropdownmenu__title{
+                @include font('Montserrat', 2em, bold);
+                color: #565656;
+            }
+
+            .dropdownmenu__icon{
+                .dropdownmenu__settingicon{
+                    width: 4em;
+                    transition: 1s;
+                    cursor: pointer;
+                    &:hover{
+                        transform: rotate(300deg); 
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+
+        .dropdownmenu__section{
+            .dropdownmenu__nav{
+                &.dropdownmenu__nav--flex{
+                    @include flex(column, none, none, none, none, none);
+                }
+                & > a {
+                    @include font('Montserrat', 1.5em, none);
+                    background-color: #303030;
+                    padding: 0.5em;
+                    color: #ffff;
+                    text-decoration: none;
+                    transition: 0.5s;
+
+                    &:hover{
+                        background-color: #434343;
+                        transition: 0.5s;
+                        transform: scale(1.1);
+                        border-radius: 0.5em;
+                    }
+                }
+
+                & > a:last-child{
+                    border-radius: 0em 0em 1em 1em;
+                    &:hover{
+                        border-radius: 0.5em;
+                    }
+                }
+            }
+        }
+
+        .setting{
+            .setting__login{
+                &.setting__login--flex{
+                    @include flex(none, none, none, center, none, none);
+                }
+                padding: 1em 0em;
+                .setting__a{
+                    .setting__button{
+                        @include font('Montserrat', none, bold);
+                        padding: 1em 0.5em;
+                        border-style: none;
+                        border-radius: 1em;
+                        color: #575757;
+                        cursor: pointer;
+                        background-color: #ffff;
+                        transition: 1s;
+
+                        &:hover{
+                            background-color: #bcbcbc;
+                            color: #000000;
+                            transition: 1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dropdownhomeicon{
+        position: fixed;
+        left: -16em;
+        transition: 0.5s;
+        opacity: 0.5;
+        &.showhousebutton{
+            left: 0em;
+            transition: 0.5s;
+        }
+
+        &.opacitybuttonhouse{
+            opacity: 1;
+            transition: 0.5s;
+        }
+        .dropdownhomeicon__section{
+            background-color: #ffff;
+            padding: 0.5em 0.5em 0.5em 6em;
+            border-radius: 0em 7em 7em 0em;
+            .dropdownhomeicon__icon{
+                .dropdownhomeicon__img{
+                    width: 4em;
+                }
+            }
+        }
+    }
+}

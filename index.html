@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de programacion donde encontraras informacion, ejemplos sobre el lenguaje de programacion que te encuentras estudiando">
+
+    <meta property="og:url"                content="https://blogprogramming.com"/>
+    <meta property="og:type"               content="article"/>
+    <meta property="og:title"              content="Aprende Programacion"/>
+    <meta property="og:description"        content="Quieres aprender a programar o dar tus primeros pasos? este blog te guiara y ayudara a dar tus primeros pasos de codigo"/>
+    <meta property="og:image"              content="http://img/image/conjunto-de-logos.svg"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/home.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header class="header">
+        <article class="header__article">
+            <section class="header__section header__section--flex">
+                <button class="header__button" id="buttonOpenDropDowMenu">
+                    MENU
+                </button>
+            </section>
+        </article>
+
+        <article class="dropdownmenu dropdownmenu--flex" id="dropdownmenu">
+            <section class="dropdownmenu__sectiontitleandicon dropdownmenu__sectiontitleandicon--flex">
+                <p class="dropdownmenu__title">
+                    Blog
+                </p>
+
+                <i class="dropdownmenu__icon">
+                    <img class="dropdownmenu__settingicon" id="dropDownMenuSettingIcon" src="img/icon/setting-mode-dark.svg" alt="Icono de engranaje de configuracion o ajustes">
+                </i>
+            </section>
+
+            <section class="dropdownmenu__section">
+                <nav class="dropdownmenu__nav dropdownmenu__nav--flex">
+                    <a class="dropdownmenu__links" href="blog/blog-about-html-tag.html">HTML semantico</a>
+                    <a class="dropdownmenu__links" href="#">Funciones</a>
+                    <a class="dropdownmenu__links" href="#">metoedos de un Arrays</a>
+                </nav>
+            </section>
+
+            <section class="setting" hidden id="setting">
+                <section class="setting__login setting__login--flex" id="settingLogin" hidden>
+                    <a class="setting__a" href="registering/login.html" id="settingALink" hidden>
+                        <button class="setting__button" id="settingButton" hidden>
+                            Inicia sesion para ver la configuracion
+                        </button>
+                    </a>
+                </section>
+            </section>
+        </article>
+    </header>
+
+    <main class="main">
+        <article class="presentation__article presentation__article--flex">
+            <section class="presentation__sectionh1">
+                <h1 class="presentation__h1">
+                    Bienvenido al Blog sobre Programacion
+                </h1>
+            </section>
+
+            <section class="presentation__descriptionaboutthewebsite presentation__descriptionaboutthewebsite--flex">
+                <section class="presentation__content1 presentation__content1--flex">
+                    <div class="presentation__divtext1">
+                        <p class="presentation__text1">
+                            Bienvenido a mi blog, donde aprenderás conceptos de una manera simple
+                            pero efectivo y con ejemplos para que los apliques en tus futuros 
+                            proyectos escolares, proyectos personales y etc
+                        </p>
+                    </div>
+
+                    <div class="presentation__img1">
+                        <img class="presentation__codeemail" src="img/image/mail-in-a-mail.svg" alt="Logo sobre codificador y un correo">
+                    </div>
+                </section>
+
+                <section class="presentation__content2 presentation__content2--flex">
+                    <div class="presentation__img2">
+                        <img class="presentation__seticons" src="img/image/conjunto-de-logos.svg" alt="3 logos juntos, los 3 logos son JavaScript, Html y Css">
+                    </div>
+
+                    <div class="presentation__divtext2">
+                        <p class="presentation__text2">
+                            En estos blogs su contenido sera de programacion y enfocado mas en 
+                            el <span lang="en">FRONT-END</span>, tendra HTML, CSS, <span lang="en">JavaScript</span>, conceptos basicos o 
+                            funciones que se te hayan olvidado
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </article>
+
+        <article class="blog blog--flex">
+            <section class="blog__sectionh1">
+                <h2 class="blog__title">
+                    Blog
+                </h2>
+            </section>
+
+            <section class="blog__contentofblogs blog__contentofblogs--flex">
+                <a href="blog/blog-about-html-tag.html" class="blog__template blog__template--flex" id="buttonShowDescription">
+                    <div class="blog__templatedivtext">
+                        <p class="blog__templatetext">
+                            Te mostraremos todas las etiquetas de HTML semantico y reconmendaciones.
+                        </p>
+                    </div>
+
+                    <div class="blog__templatecontentimg">
+                        <img class="blog__templateimg" src="img/image/conjunto-de-logos.svg" alt="3 logos juntos, los 3 logos son JavaScript, Html y Css">
+                    </div>
+                </a>
+
+                <a href="#" class="blog__template blog__template--flex" id="buttonShowDescription">
+                    <div class="blog__templatedivtext">
+                        <p class="blog__templatetext">
+                            Te mostraremos todos los metodos de un Arrays de JavaScript.
+                        </p>
+                    </div>
+
+                    <div class="blog__templatecontentimg">
+                        <img class="blog__templateimg" src="img/image/conjunto-de-logos.svg" alt="3 logos juntos, los 3 logos son JavaScript, Html y Css">
+                    </div>
+                </a>
+
+                <a href="#" class="blog__template blog__template--flex" id="buttonShowDescription">
+                    <div class="blog__templatedivtext">
+                        <p class="blog__templatetext">
+                            Funciones avanzadas de CSS: Te ensenaremos varios conceptos nuevos o no nuevos para ti si es que ya los aprendistes.
+                        </p>
+                    </div>
+
+                    <div class="blog__templatecontentimg">
+                        <img class="blog__templateimg" src="img/image/conjunto-de-logos.svg" alt="3 logos juntos, los 3 logos son JavaScript, Html y Css">
+                    </div>
+                </a>
+
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <article class="footer__article">
+            <section class="footer__section footer__section--flex">
+                <section class="footer__sectionh3 footer__sectionh3--flex">
+                    <h3 class="footer__h3">
+                        Mas informacion
+                    </h3>
+
+                    <section class="footer__sectiondiv footer__sectiondiv--flex">
+                        <div class="footer__informationproyect">
+                            <p class="footer__text1">
+                                Sitio web desarrollado para el Proyecto de EBAC.
+                            </p>
+                        </div>
+    
+                        <div class="footer__thecreator">
+                            <p class="footer__text2">
+                                Creado por Cristopher.
+                            </p>
+                        </div>
+                    </section>
+                </section>
+                
+                <section class="footer__sectionimg">
+                    <i class="footer__iconofgithub">
+                        <img class="footer__github" src="img/icon/logo-github.svg" alt="Icono de un Logo de GitHub">
+                    </i>
+                </section>
+            </section>
+        </article>
+    </footer>
+</body>
+</html>

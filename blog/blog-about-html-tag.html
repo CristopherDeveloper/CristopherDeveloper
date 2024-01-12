@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog donde aprenderas todas las Tag de Html semantico y reconmendaciones">
+
+    <meta properwty="og:url"                content="https://blogprograming.com/blog/blog-about-html-tag.html"/>
+    <meta property="og:type"               content="article"/>
+    <meta property="og:title"              content="Aprende Programacion"/>
+    <meta property="og:description"        content="Aprende HTML semantico! explicacion detallada y ejemplos"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/templateblog.js"></script>
+    <title>Todos los tags de HTML semantico</title>
+</head>
+<body>
+    <header class="header">
+        <article class="header__article">
+            <section class="header__section header__section--flex">
+                <button class="header__button" id="buttonOpenDropDowMenu">
+                    MENU
+                </button>
+            </section>
+        </article>
+
+        <article class="dropdownmenu dropdownmenu--flex" id="dropdownmenu">
+            <section class="dropdownmenu__sectiontitleandicon dropdownmenu__sectiontitleandicon--flex">
+                <p class="dropdownmenu__title">
+                    Blog
+                </p>
+
+                <i class="dropdownmenu__icon">
+                    <img class="dropdownmenu__settingicon" id="dropDownMenuSettingIcon" src="../img/icon/setting-mode-dark.svg" alt="Icono de engranaje de configuracion o ajustes">
+                </i>
+            </section>
+
+            <section class="dropdownmenu__section">
+                <nav class="dropdownmenu__nav dropdownmenu__nav--flex">
+                    <a class="dropdownmenu__links" href="#">HTML semantico</a>
+                    <a class="dropdownmenu__links" href="#">Funciones</a>
+                    <a class="dropdownmenu__links" href="#">metoedos de un Arrays</a>
+                </nav>
+            </section>
+
+            <section class="setting" hidden id="setting">
+                <section class="setting__login setting__login--flex" id="settingLogin" hidden>
+                    <a class="setting__a" href="../registering/login.html" id="settingALink" hidden>
+                        <button class="setting__button" id="settingButton" hidden>
+                            Inicia sesion para ver la configuracion
+                        </button>
+                    </a>
+                </section>
+            </section>
+        </article>
+
+        <article class="dropdownhomeicon" id="buttonHouse">
+            <section class="dropdownhomeicon__section">
+                <a href="../index.html" class="dropdownhomeicon__icon">
+                    <img class="dropdownhomeicon__img" id="iconHouse" src="../img/icon/home-icons.svg" alt="">
+                </a>
+            </section>
+        </article>
+    </header>
+
+    <main class="contentblog">
+        <article class="contentblog__article">
+            <section class="contentblog__template contentblog__template--flex">
+                <section class="contentblog__contenth1 contentblog__contenth1--flex">
+                    <h1 class="contentblog__h">
+                        Title
+                    </h1>
+                </section>
+
+                <section class="contentblog__information contentblog__information--flex">
+                    <div class="contentblog__informationbasic contentblog__informationbasic--flex">
+                        <p class="contentblog__subtitle">
+                            Sub-Tema
+                        </p>
+
+                        <div class="contentblog__contentinfo">
+                            <p class="contentblog__text">
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las ho
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contentblog__examplecode">
+                        <div class="contentblog__onlinecodejs contentblog__onlinecodejs--flex" lang="en">
+                            <span class="variable">const</span><span class="variablevalue">hello</span><span class="other">=</span><span class="string">'Hello World'<span class="other">;</span></span></span>
+                        </div>
+
+                        <div class="contentblog__onlinecodejs contentblog__onlinecodejs--flex">
+                            <span class="tool">console<span class="other">.</span><span class="method">log</span><span class="method1">( <span class="variablevalue">hello</span> )</span></span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </article>
+    </main>
+
+    <aside class="aside" id="asideAlertRecomend">
+        <article class="aside__article aside__article--flex">
+            <section class="aside__buttonforclose aside__buttonforclose--flex">
+                <i role="button" aria-label="Boton para cerrar el anuncion" id="buttonRedClose"></i>
+            </section>
+
+            <section class="aside__description aside__description--flex">
+                <p>
+                    Si disfrutas leer sobre programacion, podria interesarte en eso
+                </p>
+
+                <a href="#">Apre#nder Lua desde cero</a>
+            </section>
+        </article>
+    </aside>
+
+    <footer class="footer">
+        <article class="footer__article">
+            <section class="footer__section footer__section--flex">
+                <section class="footer__sectionh3 footer__sectionh3--flex">
+                    <h3 class="footer__h3">
+                        Mas informacion
+                    </h3>
+
+                    <section class="footer__sectiondiv footer__sectiondiv--flex">
+                        <div class="footer__informationproyect">
+                            <p class="footer__text1">
+                                Sitio web desarrollado para el Proyecto de EBAC.
+                            </p>
+                        </div>
+    
+                        <div class="footer__thecreator">
+                            <p class="footer__text2">
+                                Creado por Cristopher.
+                            </p>
+                        </div>
+                    </section>
+                </section>
+                
+                <section class="footer__sectionimg">
+                    <i class="footer__iconofgithub">
+                        <img class="footer__github" src="../img/icon/logo-github.svg" alt="Icono de un Logo de GitHub">
+                    </i>
+                </section>
+            </section>
+        </article>
+    </footer>
+</body>
+</html>

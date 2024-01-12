@@ -1,0 +1,19 @@
+$fontFamilyPrincipal: 'Montserrat', sans-serif;
+$fontFamilySecond: Arial;
+$colorPrincipal: #ffff;
+
+@mixin font($fontFamily, $fontSize, $fontWeight){
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+
+@mixin flex($flexDirection, $flexWrap, $alingContent, $justifyContent, $alingItems, $gap){
+    display: flex;
+    flex-direction: $flexDirection;
+    flex-wrap: $flexWrap;
+    align-content: $alingContent;
+    justify-content: $justifyContent;
+    align-items: $alingItems;
+    gap: $gap;
+};
